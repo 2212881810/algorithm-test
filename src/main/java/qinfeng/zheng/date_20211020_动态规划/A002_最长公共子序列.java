@@ -6,9 +6,9 @@ package qinfeng.zheng.date_20211020_动态规划;
  * @dec leetcode: https://leetcode.com/problems/longest-common-subsequence/
  * <p>
  * <p>
- * 套路：样本对应模型，一般比较最后一个元素
+ * 套路：样本对应模型，一般比较样本中的最后一个元素
  */
-public class A_002_最长公共子序列 {
+public class A002_最长公共子序列 {
 
 
     // 使用暴力递归的方法
