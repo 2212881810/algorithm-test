@@ -31,8 +31,12 @@ public class A_01_单链表_反转 {
         Node next = null;
         while (head != null) {
             next = head.next;
-            head.next = prev;  // 这两行代码其实挺巧妙的,真的！！！
+
+            // 这两行代码其实挺巧妙的,真的！！！
+            head.next = prev;
             prev = head;
+
+
             head = next;
         }
         return prev;
