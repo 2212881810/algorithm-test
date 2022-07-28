@@ -14,14 +14,13 @@ public class A_02_选择排序 {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            // 这里是i，是因为i前面的位置都已经排好了！
-            int minIndex = i;
-            for (int j = i; j < arr.length; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
+            int min = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[min]) {
+                    swap(arr, j, min);
                 }
             }
-            swap(arr, minIndex, i);
+
         }
 
     }
