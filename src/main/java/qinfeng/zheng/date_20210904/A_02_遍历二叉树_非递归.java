@@ -53,7 +53,7 @@ public class A_02_遍历二叉树_非递归 {
 
             if (cur != null) {
                 stack2.push(cur);
-                stack.push(cur.left);
+                    stack.push(cur.left);
                 stack.push(cur.right);
             }
         }

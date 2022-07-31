@@ -17,6 +17,7 @@ public class A_异或运算_03_求最右侧的1 {
 
     public static int rightOne(int num) {
         int ans = num & (-num);
+        //  ~ 取反码,  反码+1 就是补码, 一个数的补码就是这个数的相反数
 //        int ans = num & ((~num) + 1);  // 与上一行代码等价
         return ans;
     }

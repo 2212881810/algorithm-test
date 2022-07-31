@@ -75,7 +75,7 @@ public class A_05_数组实现栈和队列 {
 
         }
 
-        // 所以是个循环数组
+        // 所以是个环形数组
         private int nextIndex(int index) {
             return index < limit - 1 ? (index + 1) : 0;
         }
